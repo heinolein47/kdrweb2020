@@ -1,5 +1,6 @@
 {
   "name": "kdrweb2020",
+  "homepage" : "https://kevinrollins.com/kdrweb2020",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

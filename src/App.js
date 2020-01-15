@@ -1,8 +1,22 @@
 import React from 'react';
 import {Button, Container, Row, Col,Jumbotron,Card, CardSubtitle, CardText} from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.css";
+import CardFile from './components/CardFile.js';
 
-function App() {
+
+class App extends React.Component {
+
+   state = { cards: []};
+ 
+
+   updateCards(data){
+     console.log(data);
+     this.setState({cards: data});
+     
+   }
+   
+
+render(){
   return (
     <div className="App">
       <Container>
@@ -22,11 +36,13 @@ function App() {
                </CardText>
 
              </Card>
+             <CardFile />
            </Col>
         </Row>
       </Container>
     </div>
   );
+}
 }
 
 export default App;
